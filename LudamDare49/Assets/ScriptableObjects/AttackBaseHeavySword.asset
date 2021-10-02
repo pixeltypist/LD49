@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33b110bdc5f911478fa5b6edc043997, type: 3}
+  m_Name: AttackBaseHeavySword
+  m_EditorClassIdentifier: 
+  damage: 0
+  cooldown: 0
+  range: 0
+  isActive: 0
+  sprite: {fileID: 2747690628134850419, guid: 00849c3d2be0b824e817f0edebf8d4ca, type: 3}
+  spriteHolderForUI: {fileID: 11400000, guid: 7db53490fbe83264cbc3787387b22bcd, type: 2}
+  UIupdate: {fileID: 11400000, guid: 4cfa3ffcd82f8844e925937133c373ef, type: 2}
