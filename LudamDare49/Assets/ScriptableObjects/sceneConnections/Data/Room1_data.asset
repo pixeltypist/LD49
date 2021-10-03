@@ -20,7 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fc51d6aec4ce66b4a836653ec248290e, type: 2}
   - {fileID: 11400000, guid: 06760f96975f9ed4f8f63ffb1a6241eb, type: 2}
   - {fileID: 11400000, guid: e01e7d56cd5524747807156efa7aa853, type: 2}
-  playerSpawnLocation: {fileID: 0}
-  enemies:
-  - {fileID: 0}
-  - {fileID: 0}
+  playerSpawnLocation: {fileID: 11400000, guid: f54ec7f17be09fa41aac803c2f5cbd13, type: 2}
+  enemies: []

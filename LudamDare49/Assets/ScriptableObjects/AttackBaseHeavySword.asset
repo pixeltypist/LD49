@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33b110bdc5f911478fa5b6edc043997, type: 3}
   m_Name: AttackBaseHeavySword
   m_EditorClassIdentifier: 
-  damage: 0
-  cooldown: 0
+  damage: 10
+  cooldown: 5
   range: 0
   isActive: 0
   sprite: {fileID: 2747690628134850419, guid: 00849c3d2be0b824e817f0edebf8d4ca, type: 3}
   spriteHolderForUI: {fileID: 11400000, guid: 7db53490fbe83264cbc3787387b22bcd, type: 2}
   UIupdate: {fileID: 11400000, guid: 4cfa3ffcd82f8844e925937133c373ef, type: 2}
+  attackBoxHorizontal: {fileID: 6771639291406674477, guid: a9ef3dcb98e3eec4a83c2f11d3ad5857, type: 3}
+  attackBoxVertical: {fileID: 7742819724447942840, guid: 9b3312a921676d7429e9f1b865cf5815, type: 3}
+  hitBox: {fileID: 0}
+  rangeExtension: 0

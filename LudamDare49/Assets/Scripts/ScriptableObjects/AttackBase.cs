@@ -12,7 +12,7 @@ public abstract class AttackBase : ScriptableObject
     public SpriteHolder spriteHolderForUI;
     public GameEvent UIupdate;
 
-    public virtual void SwordSwing()
+    public virtual void SwordSwing(Transform activePoint, bool playerFacingY)
     {
 
     }

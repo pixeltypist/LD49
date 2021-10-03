@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b818d674d5a9f96448a301a56672cc8d, type: 3}
   m_Name: Room2_data
   m_EditorClassIdentifier: 
-  cameraBounds: {fileID: 0}
-  enemySpawnPoints: []
-  playerSpawnLocation: {fileID: 0}
-  enemies: []
-  doorways: []
+  doorwayToggle: {fileID: 11400000, guid: 20ff92fb28c705641ba4bd79fff84b47, type: 2}
+  enemySpawnPoints:
+  - {fileID: 11400000, guid: a70bbe41c3a1a8c499696e029d7a5096, type: 2}
+  - {fileID: 11400000, guid: 25533411ea1780243a38084a4bd461fd, type: 2}
+  - {fileID: 11400000, guid: 09765442413015f4eac767f719410fc3, type: 2}
+  - {fileID: 11400000, guid: 7c4ae3e2acaee8446be9c6255e152d02, type: 2}
+  - {fileID: 11400000, guid: 3c8c3e2febd405a47b2fd26a550d4277, type: 2}
+  - {fileID: 11400000, guid: 53b211011ba1f424c82abfb5e0026969, type: 2}
+  playerSpawnLocation: {fileID: 11400000, guid: d5d42b296fe30f64a94d55c3654d1355, type: 2}
+  enemies:
+  - {fileID: 0}
+  - {fileID: 0}

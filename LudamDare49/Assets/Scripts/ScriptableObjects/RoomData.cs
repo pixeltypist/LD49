@@ -8,8 +8,10 @@ public class RoomData : ScriptableObject
    public DoorwayToggle doorwayToggle;
    public List<TransformHold> enemySpawnPoints;
 
-   public Transform playerSpawnLocation;
+   public TransformHold playerSpawnLocation;
 
    public List<GameObject> enemies;
+
+   public bool roomIsActive;
 
 }

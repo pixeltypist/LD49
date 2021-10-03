@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a13d0789fcf82c4097aac747ae34c72, type: 3}
   m_Name: AttackBaseMagicMissle
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 1
   cooldown: 0
   range: 0
   isActive: 0

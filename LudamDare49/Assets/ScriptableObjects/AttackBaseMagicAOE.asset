@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f7410b3aca9904aa5eb69d57bda8a6, type: 3}
   m_Name: AttackBaseMagicAOE
   m_EditorClassIdentifier: 
-  damage: 0
-  cooldown: 0
+  damage: 5
+  cooldown: 5
   range: 0
-  isActive: 1
+  isActive: 0
   sprite: {fileID: -5177388603050735206, guid: 89b0dfcbfcb01d04f80a7c7a52b040ae, type: 3}
   spriteHolderForUI: {fileID: 11400000, guid: 7db53490fbe83264cbc3787387b22bcd, type: 2}
   UIupdate: {fileID: 11400000, guid: 4cfa3ffcd82f8844e925937133c373ef, type: 2}
