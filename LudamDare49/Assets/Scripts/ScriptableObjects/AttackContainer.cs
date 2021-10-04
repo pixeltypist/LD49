@@ -10,6 +10,8 @@ public class AttackContainer : ScriptableObject
     public List<AttackBase> attackBases;
     public AttackBase activeBase;
 
+    public GameEvent updateWeaponUI;
+
     public AttackBase DetermineActiveAttack()
     {
         for(int i = 0; i<attackBases.Count; i++)
@@ -31,5 +33,12 @@ public class AttackContainer : ScriptableObject
             activeBase = attackBases[randomIndex];
             activeBase.ChangeOut();
         }
+        if(attackBases[randomIndex] == activeBase)
+        {
+            activeBase.RaiseEvent();
+        }
+
+        //updateWeaponUI.Raise();
+
     }
 }

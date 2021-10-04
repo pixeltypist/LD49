@@ -10,14 +10,15 @@ public class AttackBaseMagicMissle : AttackBase
     public override void MagicMissle(Vector2 target, Transform attacker, Transform attackPoint)
     {
         Vector2 trajectory = new Vector2(target.x - attacker.position.x, target.y - attacker.position.y);
-        string boolToSet = CheckForBoolToSet(trajectory);
+        Vector2 holdTrajectory = trajectory;
+        //string boolToSet = ;
 
         trajectory.Normalize();
         GameObject missle = Instantiate(magicMissle, attackPoint.position, Quaternion.identity);
-        missle.GetComponent<MagicMissle>().SetTrajectory(trajectory, boolToSet);
+        missle.GetComponent<MagicMissle>().SetTrajectory(trajectory, CheckForBoolToSet(holdTrajectory));
     }
 
-    string CheckForBoolToSet(Vector2 trajectory)
+    public string CheckForBoolToSet(Vector2 trajectory)
     {
         if(trajectory.x > 0)
         {

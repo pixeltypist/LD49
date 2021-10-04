@@ -33,7 +33,13 @@ public abstract class AttackBase : ScriptableObject
         if(isActive)
         {
             spriteHolderForUI.SetSprite(sprite);
-            UIupdate.Raise();
+            
         }
+        UIupdate.Raise();
+    }
+
+    public void RaiseEvent()
+    {
+        UIupdate.Raise();
     }
 }

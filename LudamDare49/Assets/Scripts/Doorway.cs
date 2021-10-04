@@ -61,10 +61,11 @@ public class Doorway : MonoBehaviour
             mapUI.doorwayLinks.Add(room.GetComponent<RoomController>().roomData);
         }
 
-        foreach(var link in mapUI.doorwayLinks)
-        {
+        mapUI.UpdateLinks();
+        //foreach(var link in mapUI.doorwayLinks)
+       /* {
             mapUI.UpdatePlayerPosition(link, link.roomIsActive);
-        }
+        }*/
         
     }
 

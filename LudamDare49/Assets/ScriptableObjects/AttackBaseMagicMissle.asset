@@ -15,7 +15,7 @@ MonoBehaviour:
   damage: 1
   cooldown: 0.2
   range: 0
-  isActive: 1
+  isActive: 0
   sprite: {fileID: 5845691147181136702, guid: 783e6aa09296c5548a5d454231cb60d9, type: 3}
   spriteHolderForUI: {fileID: 11400000, guid: 7db53490fbe83264cbc3787387b22bcd, type: 2}
   UIupdate: {fileID: 11400000, guid: 4cfa3ffcd82f8844e925937133c373ef, type: 2}

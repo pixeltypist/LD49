@@ -15,6 +15,6 @@ MonoBehaviour:
   attackBases:
   - {fileID: 11400000, guid: a2c2e485f6d1f354d89dcb849b8822c9, type: 2}
   - {fileID: 11400000, guid: bdf6fc756cfb6894da857e65c3082106, type: 2}
-  - {fileID: 11400000, guid: 67f075de7aa870e4a82ddb2aab3add37, type: 2}
   - {fileID: 11400000, guid: c2fd93ff5fcbec04a9e55d7f7dda3834, type: 2}
-  activeBase: {fileID: 11400000, guid: 67f075de7aa870e4a82ddb2aab3add37, type: 2}
+  activeBase: {fileID: 11400000, guid: a2c2e485f6d1f354d89dcb849b8822c9, type: 2}
+  updateWeaponUI: {fileID: 11400000, guid: 4cfa3ffcd82f8844e925937133c373ef, type: 2}

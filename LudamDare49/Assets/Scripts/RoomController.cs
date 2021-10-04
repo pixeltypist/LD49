@@ -46,6 +46,7 @@ public class RoomController : MonoBehaviour
         {
             enteredOnce = true;
             mapUI.RevealRoom(roomData);
+            toggledDoorAfterClear = false;
         }
 
         roomData.roomIsActive = true;
@@ -65,6 +66,14 @@ public class RoomController : MonoBehaviour
                 instantiatedEnemy.GetComponent<EnemyController>().SetRoomController(this);
                 roomData.enemies.Add(instantiatedEnemy);
             }
+        }
+
+        if (roomData.enemies.Count == 0)
+        {
+            Vector3 spawnPoint = new Vector3(roomData.enemySpawnPoints[1].objTransform.position.x, roomData.enemySpawnPoints[1].objTransform.position.y, 0);
+            GameObject instantiatedEnemy = Instantiate(enemyList.enemyList[0], spawnPoint, Quaternion.identity);
+            instantiatedEnemy.GetComponent<EnemyController>().SetRoomController(this);
+            roomData.enemies.Add(instantiatedEnemy);
         }
     }
     /*void ToggleDoorways()
@@ -101,6 +110,7 @@ public class RoomController : MonoBehaviour
     private void Update() {
         if(roomData.roomIsActive)
         {
+            print("updating because room active");
             CheckForLiveEnemies();
             if (allEnemiesDead & !toggledDoorAfterClear)
             {

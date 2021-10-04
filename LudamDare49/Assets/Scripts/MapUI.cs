@@ -8,6 +8,7 @@ public class MapUI : MonoBehaviour
     public List<Image> roomSprites;
     public List<RoomData> roomDatas;
     public Sprite playerLocation;
+    public Sprite baseSprite;
 
     public Dictionary<RoomData, Image> UIConnections;
 
@@ -50,8 +51,17 @@ public class MapUI : MonoBehaviour
     {
         foreach(var sprite in roomSprites)
         {
+            sprite.sprite = baseSprite;
             sprite.enabled = true;
         }
         //RevealRoom(doorwayLinks[12]);
+    }
+
+    public void UpdateLinks()
+    {
+        foreach(var link in doorwayLinks)
+        {
+            UpdatePlayerPosition(link, link.roomIsActive);
+        }
     }
 }

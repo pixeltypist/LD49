@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 2013802442}
   - component: {fileID: -2001468482714075618}
   - component: {fileID: 3182457287224607656}
+  - component: {fileID: -5271974018140147825}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -287,6 +288,34 @@ MonoBehaviour:
       - m_Target: {fileID: -3069595144457696484}
         m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
         m_MethodName: GameUnPaused
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-5271974018140147825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466406329581354233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e3d114fb8b31814f80846e05bd4fbc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 8aa8eb9aef740ca41b74ceb0c13d50f7, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -3069595144457696484}
+        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
+        m_MethodName: Die
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

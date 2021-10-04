@@ -35,6 +35,7 @@ public class MagicMissle : MonoBehaviour
     {
         if(other.CompareTag("wallBounds"))
         {
+            print("Hit wall");
             anim.SetBool("disintegrate", true);
         }
         else if (other.CompareTag("Enemy"))
@@ -45,7 +46,7 @@ public class MagicMissle : MonoBehaviour
     }
 
     void Disintegrate(){
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 
 }

@@ -74,11 +74,12 @@ public class DungeonManager : MonoBehaviour
         currentIndex = 12;
         TurnOffAllRooms();
         finalRoomSpawnPoint.GetComponent<PlayerSpawnPoint>().roomData.roomIsActive = false;
-        finalRoomSpawnPoint.GetComponent<RoomController>().TurnOffWalls();
+        //finalRoomSpawnPoint.GetComponent<RoomController>().TurnOffWalls();
         teleportDestination = roomSpawnPoints[currentIndex];
+        roomSpawnPoints[currentIndex].GetComponent<PlayerSpawnPoint>().roomData.roomIsActive = true;
         player.transform.position = teleportDestination.GetComponent<TransformSetter>().transformHold.objTransform.position;
         teleportDestination.GetComponent<PlayerSpawnPoint>().TeleportedToRoom();
-        roomSpawnPoints[currentIndex].GetComponent<PlayerSpawnPoint>().roomData.roomIsActive = true;
+        
 
         //play some kind of animation?
     }
@@ -89,6 +90,8 @@ public class DungeonManager : MonoBehaviour
         {
             GameObject hold = spawnPoint.GetComponent<PlayerSpawnPoint>().roomController;
             hold.GetComponent<RoomController>().enteredOnce = false; 
+
+            //reset sprites, too
             hold.GetComponent<RoomController>().TurnOffWalls();
         }
     }

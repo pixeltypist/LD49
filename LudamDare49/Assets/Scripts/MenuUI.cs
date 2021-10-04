@@ -9,29 +9,41 @@ public class MenuUI : MonoBehaviour
     public Button Quit, Continue;
     public GameEvent PauseGame, UnPause;
     bool menuActive;
+    bool playerDead;
+    public GameEvent restartGame;
 
     private void Start() {
         menu.SetActive(false);
         menuActive = false;
     }
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(!playerDead)
         {
-            if(!menuActive)
+            if(Input.GetKeyDown(KeyCode.Escape))
             {
-                 menu.SetActive(true);
-                print("Trying to turn on menu");
-                menuActive = true;
-                PauseGame.Raise();
-            }   
-            else
-            {
-                menuActive = false;
-                UnPause.Raise();
-                menu.SetActive(false);
+                if(!menuActive)
+                {
+                    menu.SetActive(true);
+                    print("Trying to turn on menu");
+                    menuActive = true;
+                    PauseGame.Raise();
+                }   
+                else
+                {
+                    menuActive = false;
+                    UnPause.Raise();
+                    menu.SetActive(false);
+                }
+                
             }
-            
         }
+        if(playerDead)
+        {
+            menu.SetActive(true);
+            menuActive = true;
+            PauseGame.Raise();
+        }
+        
         
     }
 
@@ -40,11 +52,27 @@ public class MenuUI : MonoBehaviour
         menuActive = false;
         UnPause.Raise();
         menu.SetActive(false);
+        if(playerDead)
+        {
+            RestartGame();
+        }
     }
 
     public void QuitGame()
     {
         print("Quitting game");
         Application.Quit();
+    }
+
+    public void PlayerDied(){
+        
+            playerDead = true;
+        
+    }
+
+    public void RestartGame()
+    {
+        restartGame.Raise();
+        playerDead = false;
     }
 }
