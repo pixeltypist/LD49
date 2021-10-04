@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorwayToggle: {fileID: 11400000, guid: 20ff92fb28c705641ba4bd79fff84b47, type: 2}
   enemySpawnPoints:
-  - {fileID: 11400000, guid: 829a61537b00a81438d9ea9e36b72ab2, type: 2}
-  - {fileID: 11400000, guid: 3d23ba655ffc945468d3cf9f4b4019c3, type: 2}
-  - {fileID: 11400000, guid: 7765f3d8c1ae1154483b572852244ec7, type: 2}
-  - {fileID: 11400000, guid: a1299d069ad84a642bc112c903c398d1, type: 2}
-  - {fileID: 11400000, guid: 5c87d5ef590394848af58e749c57884d, type: 2}
-  - {fileID: 11400000, guid: 1280d53f494598a40ad97cae67f2606e, type: 2}
+  - {fileID: 11400000, guid: cbdc919f89188054f9ab36293d9d5163, type: 2}
+  - {fileID: 11400000, guid: 10f3042750b817048ac539d6bd49b190, type: 2}
+  - {fileID: 11400000, guid: a5f3b3357badf704388f6830afce88a9, type: 2}
+  - {fileID: 11400000, guid: 3f25e780219198c4aa5b4b0f9009f167, type: 2}
   playerSpawnLocation: {fileID: 11400000, guid: f1558152ecbb0714880a73d4f90b66a3, type: 2}
   enemies: []
+  roomIsActive: 1

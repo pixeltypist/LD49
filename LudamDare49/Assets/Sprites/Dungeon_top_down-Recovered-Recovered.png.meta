@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 62b20ce21a4e58540a05f4e1bd5cfd1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2654297025452800405
+    second: Dungeon_top_down-Recovered-Recovered_0
+  - first:
+      213: 6074665934091587543
+    second: Dungeon_top_down-Recovered-Recovered_1
+  - first:
+      213: -2276502860372486446
+    second: Dungeon_top_down-Recovered-Recovered_2
+  - first:
+      213: 2523766075698402382
+    second: Dungeon_top_down-Recovered-Recovered_3
+  - first:
+      213: -5741985572302372368
+    second: Dungeon_top_down-Recovered-Recovered_4
+  - first:
+      213: 1848818823786057365
+    second: Dungeon_top_down-Recovered-Recovered_5
+  - first:
+      213: 1300680335847836607
+    second: Dungeon_top_down-Recovered-Recovered_6
+  - first:
+      213: -8068024941577483311
+    second: Dungeon_top_down-Recovered-Recovered_7
+  - first:
+      213: -5529595627706341701
+    second: Dungeon_top_down-Recovered-Recovered_8
+  - first:
+      213: -9007089953041834428
+    second: Dungeon_top_down-Recovered-Recovered_9
+  - first:
+      213: 4146228755141652060
+    second: Dungeon_top_down-Recovered-Recovered_10
+  - first:
+      213: 2059955610392966261
+    second: Dungeon_top_down-Recovered-Recovered_11
+  - first:
+      213: -8976447298522933549
+    second: Dungeon_top_down-Recovered-Recovered_12
+  - first:
+      213: -3511213187538810671
+    second: Dungeon_top_down-Recovered-Recovered_13
+  - first:
+      213: -4594733239520497486
+    second: Dungeon_top_down-Recovered-Recovered_14
+  - first:
+      213: 6533823717613015228
+    second: Dungeon_top_down-Recovered-Recovered_15
+  - first:
+      213: 8310036058990170422
+    second: Dungeon_top_down-Recovered-Recovered_16
+  - first:
+      213: 6266264305342769544
+    second: Dungeon_top_down-Recovered-Recovered_17
+  - first:
+      213: -1893631146041737119
+    second: Dungeon_top_down-Recovered-Recovered_18
+  - first:
+      213: 7280637562008502082
+    second: Dungeon_top_down-Recovered-Recovered_19
+  - first:
+      213: -5591693976258025841
+    second: Dungeon_top_down-Recovered-Recovered_20
+  - first:
+      213: -3701126739715525981
+    second: Dungeon_top_down-Recovered-Recovered_21
+  - first:
+      213: 9027627472791571659
+    second: Dungeon_top_down-Recovered-Recovered_22
+  - first:
+      213: -3015959698474008090
+    second: Dungeon_top_down-Recovered-Recovered_23
+  - first:
+      213: 7768539993068186543
+    second: Dungeon_top_down-Recovered-Recovered_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66828d1bea0a2bd0800000000000000
+      internalID: -2654297025452800405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df02ba6b7c8d4450800000000000000
+      internalID: 6074665934091587543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6565db5bc3860e0800000000000000
+      internalID: -2276502860372486446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e445f26dfd7360320800000000000000
+      internalID: 2523766075698402382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1cf795b8e5050b0800000000000000
+      internalID: -5741985572302372368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ec2ddbce258a910800000000000000
+      internalID: 1848818823786057365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_6
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbcb88cfd1fc0210800000000000000
+      internalID: 1300680335847836607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_7
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db4846df0e980090800000000000000
+      internalID: -8068024941577483311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6a20bd21ee243b0800000000000000
+      internalID: -5529595627706341701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_9
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e93f8c863600380800000000000000
+      internalID: -9007089953041834428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e6abbc51d5a8930800000000000000
+      internalID: 4146228755141652060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_11
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574bb8aa6be669c10800000000000000
+      internalID: 2059955610392966261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_12
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d69682cdb04d6380800000000000000
+      internalID: -8976447298522933549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_13
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8051a853aa54fc0800000000000000
+      internalID: -3511213187538810671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_14
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b073bc667a3c30c0800000000000000
+      internalID: -4594733239520497486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_15
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb09851bd0eccaa50800000000000000
+      internalID: 6533823717613015228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_16
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631dbc664cd235370800000000000000
+      internalID: 8310036058990170422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_17
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8896aa48f2e36f650800000000000000
+      internalID: 6266264305342769544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_18
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160019c618878b5e0800000000000000
+      internalID: -1893631146041737119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_19
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ff1e5c9450a0560800000000000000
+      internalID: 7280637562008502082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_20
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86e27464ff4662b0800000000000000
+      internalID: -5591693976258025841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_21
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a27e82f6d4f2acc0800000000000000
+      internalID: -3701126739715525981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_22
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc8c482b53984d70800000000000000
+      internalID: 9027627472791571659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_23
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1009b22a82526d0800000000000000
+      internalID: -3015959698474008090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_top_down-Recovered-Recovered_24
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 240
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabae36d6f56fcb60800000000000000
+      internalID: 7768539993068186543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

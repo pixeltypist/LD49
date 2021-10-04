@@ -9,14 +9,18 @@ public class MagicMissle : MonoBehaviour
     Rigidbody2D rb;
 
     Vector2 trajectory;
+    //string boolToSetForAnim;
+    Animator anim;
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
-    public void SetTrajectory(Vector2 _trajectory)
+    public void SetTrajectory(Vector2 _trajectory, string boolToSet)
     {
         trajectory = _trajectory;
+        anim.SetBool(boolToSet, true);
     }
     private void FixedUpdate() {
         Shoot(trajectory);
@@ -31,11 +35,12 @@ public class MagicMissle : MonoBehaviour
     {
         if(other.CompareTag("wallBounds"))
         {
-            Disintegrate();
+            anim.SetBool("disintegrate", true);
         }
         else if (other.CompareTag("Enemy"))
         {
-            print("Hit an enemy");
+            other.GetComponent<EnemyHealthManager>().Attacked(damage.Value);
+            anim.SetBool("disintegrate", true);
         }
     }
 

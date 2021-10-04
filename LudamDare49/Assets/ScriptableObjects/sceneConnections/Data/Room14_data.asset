@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b818d674d5a9f96448a301a56672cc8d, type: 3}
+  m_Name: Room14_data
+  m_EditorClassIdentifier: 
+  doorwayToggle: {fileID: 0}
+  enemySpawnPoints:
+  - {fileID: 11400000, guid: c6bfe2daabc90dc4ba952597be05bbe2, type: 2}
+  - {fileID: 11400000, guid: 642fe633f753aec4db6b24f25b43266b, type: 2}
+  - {fileID: 11400000, guid: a7481fa2b070824449a80d904e354d75, type: 2}
+  - {fileID: 11400000, guid: f9b4230eecadf3e48a22c1e1473f3518, type: 2}
+  playerSpawnLocation: {fileID: 11400000, guid: ba3e187d929a24541815007f88a12152, type: 2}
+  enemies: []
+  roomIsActive: 0

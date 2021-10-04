@@ -13,11 +13,13 @@ public class Doorway : MonoBehaviour
     public List<GameObject> roomConnections;
     public List<Transform> roomEntryPoints;
     Rigidbody2D rb;
+    public MapUI mapUI;
 
     //public bool isActive;
     //public DoorwayToggle doorwayToggle;
 
     public bool hasBeenPortalBefore;
+    public bool pickedToBePortal;
 
     public Dictionary<GameObject, Transform> entryPoints = new Dictionary<GameObject, Transform>();
     //public Dictionary<RoomData, GameObject> rooms = new Dictionary<RoomData, GameObject>();
@@ -32,7 +34,7 @@ public class Doorway : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Player") & !isPortal)
+        if(other.CompareTag("Player") & !pickedToBePortal)
         {
             SetActiveRoom();
             activeRoom.GetComponent<RoomController>().EnteredRoom();
@@ -48,6 +50,7 @@ public class Doorway : MonoBehaviour
 
     void SetActiveRoom()
     {
+        mapUI.doorwayLinks.Clear();
         foreach(var room in roomConnections)
         {
             room.GetComponent<RoomController>().roomData.roomIsActive = !room.GetComponent<RoomController>().roomData.roomIsActive; // dependent on whether or not it's been set properly in the first place
@@ -55,7 +58,14 @@ public class Doorway : MonoBehaviour
             {
                 activeRoom = room;
             }
+            mapUI.doorwayLinks.Add(room.GetComponent<RoomController>().roomData);
         }
+
+        foreach(var link in mapUI.doorwayLinks)
+        {
+            mapUI.UpdatePlayerPosition(link, link.roomIsActive);
+        }
+        
     }
 
    /*public void UpdateDoorState()
@@ -65,7 +75,8 @@ public class Doorway : MonoBehaviour
     
     public void SetAsPortal()
     {
-        isPortal = true;
+        pickedToBePortal = true;
+        //isPortal = true;
 
         /*print("SetAsPortal()");
         if(hasBeenPortalBefore)

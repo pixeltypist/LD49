@@ -15,11 +15,9 @@ MonoBehaviour:
   damage: 10
   cooldown: 5
   range: 0
-  isActive: 0
-  sprite: {fileID: 2747690628134850419, guid: 00849c3d2be0b824e817f0edebf8d4ca, type: 3}
+  isActive: 1
+  sprite: {fileID: -1352082235599962943, guid: 99f8d629659beb645b4ef75c01030d33, type: 3}
   spriteHolderForUI: {fileID: 11400000, guid: 7db53490fbe83264cbc3787387b22bcd, type: 2}
   UIupdate: {fileID: 11400000, guid: 4cfa3ffcd82f8844e925937133c373ef, type: 2}
-  attackBoxHorizontal: {fileID: 6771639291406674477, guid: a9ef3dcb98e3eec4a83c2f11d3ad5857, type: 3}
-  attackBoxVertical: {fileID: 7742819724447942840, guid: 9b3312a921676d7429e9f1b865cf5815, type: 3}
-  hitBox: {fileID: 0}
-  rangeExtension: 0
+  attackBoxHorizontal: {fileID: 4372786853029724943, guid: 3ba371a3b5c8d9f4b926ae3479e2e27b, type: 3}
+  attackBoxVertical: {fileID: 6600128593928241459, guid: a08f1172e2b550041b5c7ebfe2c12557, type: 3}

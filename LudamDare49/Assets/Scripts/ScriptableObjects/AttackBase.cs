@@ -12,18 +12,18 @@ public abstract class AttackBase : ScriptableObject
     public SpriteHolder spriteHolderForUI;
     public GameEvent UIupdate;
 
-    public virtual void SwordSwing(Transform activePoint, bool playerFacingY)
+    public virtual GameObject SwordSwing(bool playerFacingY)
     {
-
+        return null;
     }
     public virtual void MagicMissle(Vector2 target, Transform attacker, Transform attackPoint)
     {
 
     }
 
-    public virtual void AOE(TransformHold playerPos, GameObject playerObj)
+    public virtual GameObject AOE()
     {
-
+        return null;
     }
 
 

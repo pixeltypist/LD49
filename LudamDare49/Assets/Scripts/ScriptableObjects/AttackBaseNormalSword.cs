@@ -6,19 +6,20 @@ using UnityEngine;
 public class AttackBaseNormalSword : AttackBase
 {
     public GameObject attackBoxHorizontal, attackBoxVertical;
-    public GameObject hitBox;
-    public override void SwordSwing(Transform activePoint, bool playerFacingY)
+    //public GameObject hitBox;
+    public override GameObject SwordSwing(bool playerFacingY)
     {
-        hitBox = null;
         if(playerFacingY)
         {
-            hitBox = Instantiate(attackBoxHorizontal, activePoint.position, Quaternion.identity);
+            return attackBoxHorizontal; 
+            //Instantiate(attackBoxHorizontal, activePoint.position, Quaternion.identity);
         }
         else
         {
-            hitBox = Instantiate(attackBoxVertical, activePoint.position, Quaternion.identity);
+            return attackBoxVertical;
+            //hitBox = Instantiate(attackBoxVertical, activePoint.position, Quaternion.identity);
         }
 
-        hitBox.GetComponent<SwordAttack>().DealDamage(damage);
+        //hitBox.GetComponent<SwordAttack>().DealDamage(damage);
     }
 }

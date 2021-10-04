@@ -13,7 +13,9 @@ public class EnemyController : MonoBehaviour
     Rigidbody2D rb;
     float distanceToPlayer;
 
-    bool isAttacking, isFrozen;
+    bool isAttacking, isFrozen, playerClose, canAttack;
+    public GameObject attackTrigger;
+    Animator anim;
 
     //BoxCollider2D hitBox;
     private void Start() 
@@ -21,6 +23,11 @@ public class EnemyController : MonoBehaviour
         playerLocation = player.objTransform;
         trajectory = new Vector2(0,0);
         rb = GetComponent<Rigidbody2D>();
+        isFrozen = false;
+        playerClose = false;
+        attackTrigger.SetActive(false);
+        anim = GetComponent<Animator>();
+        canAttack = true;
         //hitBox = GetComponent<BoxCollider2D>();
         //hitBox.enabled = false;
     }
@@ -28,15 +35,24 @@ public class EnemyController : MonoBehaviour
     private void Update() {
         trajectory = playerLocation.position - transform.position;
         distanceToPlayer = trajectory.magnitude;
+        if(distanceToPlayer<1)
+        {
+            playerClose = true;
+        }
+        else{
+            playerClose = false;
+        }
+        
         trajectory.Normalize();
     }
     private void FixedUpdate() {
-        if(!isFrozen & !isAttacking)
+        if(!isFrozen & !isAttacking & !playerClose)
         {
             rb.MovePosition(rb.position + trajectory*Time.fixedDeltaTime*speed);
         }
-        if(distanceToPlayer<attackRange)
+        if(distanceToPlayer<attackRange & canAttack)
         {
+            StartAttack();
             //hitBox.enabled = true;
         }
         
@@ -50,14 +66,25 @@ public class EnemyController : MonoBehaviour
             Attack();
         }
     }*/
+
+    public void StartAttack()
+    {
+        print("enemy start attack");
+        isFrozen = true;
+        canAttack = false;
+        anim.SetBool("isAttacking", true);
+    }
     void Attack()
     {
         print("Attacking");
-        isFrozen = true;
+        //isFrozen = true;
+        //isAttacking = true;
+
+        attackTrigger.SetActive(true);
         isAttacking = true;
         //hitBox.enabled = true;
         //do some damage
-        StartCoroutine("Cooldown");
+        //StartCoroutine("Cooldown");
     }
 
     public void SetRoomController(RoomController _roomController)
@@ -73,8 +100,31 @@ public class EnemyController : MonoBehaviour
 
     IEnumerator Cooldown()
     {
+        print("Entered cooldown");
         yield return new WaitForSeconds(attackCooldown);
-        isFrozen = false;
+        canAttack = true;
+        //isFrozen = false;
+        //isAttacking = false;
+    }
+
+    public void FinishAttack()
+    {
+        print("Entered finish attack");
         isAttacking = false;
+        isFrozen = false;
+        attackTrigger.GetComponent<enemyPingPlayer>().hasAlreadyAttackedPlayerOnce = false;
+        attackTrigger.SetActive(false);
+        anim.SetBool("isAttacking", false);
+        StartCoroutine("Cooldown");
+    }
+
+    public void GamePaused()
+    {
+        isFrozen = true;
+    }
+
+    public void GameUnPaused()
+    {
+        isFrozen = false;
     }
 }

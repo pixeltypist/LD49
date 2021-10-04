@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b250dad792da2046ab605d8b831902e, type: 3}
   m_Name: AttackBaseNormalSword
   m_EditorClassIdentifier: 
-  damage: 3
-  cooldown: 0
+  damage: 10
+  cooldown: 2
   range: 0
   isActive: 0
-  sprite: {fileID: 3625043607559282579, guid: 440400b981a61c549964f68195cb7e02, type: 3}
+  sprite: {fileID: -4935811309795007442, guid: 99f8d629659beb645b4ef75c01030d33, type: 3}
   spriteHolderForUI: {fileID: 11400000, guid: 7db53490fbe83264cbc3787387b22bcd, type: 2}
   UIupdate: {fileID: 11400000, guid: 4cfa3ffcd82f8844e925937133c373ef, type: 2}
   attackBoxHorizontal: {fileID: 6771639291406674477, guid: a9ef3dcb98e3eec4a83c2f11d3ad5857, type: 3}
   attackBoxVertical: {fileID: 7742819724447942840, guid: 9b3312a921676d7429e9f1b865cf5815, type: 3}
-  hitBox: {fileID: 0}

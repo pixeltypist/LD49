@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: TestEnemyList
   m_EditorClassIdentifier: 
   enemyList:
-  - {fileID: 5482344864493879415, guid: 763951fb9399b49468032212a81e4474, type: 3}
-  - {fileID: 2185477917825514502, guid: 5e4f06f2146074842a50e989646ab208, type: 3}
   - {fileID: 8466406329581354233, guid: fa8d43fd1f149d14c879e18bc35e6184, type: 3}

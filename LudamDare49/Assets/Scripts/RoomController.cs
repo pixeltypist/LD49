@@ -11,10 +11,10 @@ public class RoomController : MonoBehaviour
     public RoomData roomData;
     public EnemyList enemyList;
     bool allEnemiesDead;
-    public bool roomIsActive = false;
+    //public bool roomIsActive = false;
     bool toggledDoorAfterClear = false;
 
-    bool enteredOnce;
+    public bool enteredOnce;
 
     public List<BoxCollider2D> doorwayColliders;
 
@@ -22,10 +22,11 @@ public class RoomController : MonoBehaviour
     List<GameObject> viablePortals;
 
     int portalIndex;
+    public MapUI mapUI;
 
     private void Start() {
         TurnOffWalls();
-        viablePortals = Doorways;
+        viablePortals = new List<GameObject>();
     }
     public void EnteredRoom()
     {
@@ -44,8 +45,11 @@ public class RoomController : MonoBehaviour
         if(!enteredOnce)
         {
             enteredOnce = true;
+            mapUI.RevealRoom(roomData);
         }
-        
+
+        roomData.roomIsActive = true;
+        //mapUI.UpdatePlayerPosition();
     }
 
     void PopulateEnemies()
@@ -63,10 +67,10 @@ public class RoomController : MonoBehaviour
             }
         }
     }
-    void ToggleDoorways()
+    /*void ToggleDoorways()
     {
         roomData.doorwayToggle.ToggleDoors();
-    }
+    }*/
 
     void TurnOnWalls()
     {
@@ -77,7 +81,7 @@ public class RoomController : MonoBehaviour
         }
     }
 
-    void TurnOffWalls()
+    public void TurnOffWalls()
     {
         print("TurnOffWalls");
         foreach(var door in doorwayColliders)
@@ -90,7 +94,7 @@ public class RoomController : MonoBehaviour
         DecideOnPortalDoorway();
         print("AllEnemiesDefeated()");
         //confiner.m_BoundingShape2D = null;
-        ToggleDoorways();
+        //ToggleDoorways();
         TurnOffWalls();
     }
 
@@ -147,19 +151,23 @@ public class RoomController : MonoBehaviour
 
     void DetermineViablePortals()
     {
-        if(viablePortals.Count>0)
+        viablePortals.Clear();
+        foreach(var door in Doorways)
         {
-            foreach(var door in viablePortals)
+            if(!door.GetComponent<Doorway>().isPortal)
             {
-                if(door.GetComponent<Doorway>().hasBeenPortalBefore)
-                {
-                    if(door.GetComponent<Doorway>().portal.enabled | door.GetComponent<Doorway>().isPortal)
-                    {
-                        door.GetComponent<Doorway>().portal.enabled = false;
-                        door.GetComponent<Doorway>().isPortal = false;
-                    }
-                    viablePortals.Remove(door);
-                }
+                viablePortals.Add(door);
+            }
+            else
+            {
+                door.GetComponent<Doorway>().portal.enabled = false;
+            }
+
+
+
+            if(door.GetComponent<Doorway>().pickedToBePortal)
+            {
+                door.GetComponent<Doorway>().pickedToBePortal = false;
             }
         }
         

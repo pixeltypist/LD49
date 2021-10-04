@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -281491629027208029}
   - component: {fileID: 2573213169649700830}
   - component: {fileID: -7426229539346239635}
+  - component: {fileID: -4198831420857603776}
   m_Layer: 0
   m_Name: magicMissleTest
   m_TagString: Untagged
@@ -95,7 +96,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 4972686911281891391}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 1
+  m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -116,7 +117,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -136,3 +137,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {fileID: 11400000, guid: 363d90b0ce596c04e8c21b3c9e09c111, type: 2}
   damage: {fileID: 11400000, guid: 0fa564e9de14aa94889ace3084fd1db1, type: 2}
+--- !u!95 &-4198831420857603776
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972686911281891391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c259207de540f247a92529f87d850a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

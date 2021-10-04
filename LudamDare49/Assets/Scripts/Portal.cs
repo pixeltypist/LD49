@@ -15,8 +15,9 @@ public class Portal : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Player") & doorway.isPortal)
+        if(other.CompareTag("Player") & doorway.pickedToBePortal)
         {
+            doorway.isPortal = true;
             passedThroughPortal.Raise();
             doorway.hasBeenPortalBefore = true;
         }

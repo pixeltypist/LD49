@@ -7,10 +7,12 @@ public class AttackBaseMagicAOE : AttackBase
 {
    public GameObject aoe;
 
-   public override void AOE(TransformHold playerPos, GameObject playerObj)
+   public override GameObject AOE()
    {
-       Vector3 playerPosition = new Vector3(playerPos.objTransform.position.x, playerPos.objTransform.position.y, 0);
-       GameObject areaOfEffect = Instantiate(aoe, playerPosition, Quaternion.identity);
-       areaOfEffect.transform.parent = playerObj.transform;
+       return aoe;
+       //Vector3 playerPosition = new Vector3(playerPos.objTransform.position.x, playerPos.objTransform.position.y, 0);
+       //GameObject areaOfEffect = Instantiate(aoe, playerPosition, Quaternion.identity);
+       //areaOfEffect.transform.parent = playerObj.transform;
+       //return areaOfEffect;
    }
 }

@@ -14,6 +14,7 @@ public class PlayerHealthManager : MonoBehaviour
 
     public void Attacked(float damage)
     {
+        print("PlayerAttacked");
         currentHealth.Value -= damage;
         healthChanged.Raise();
     }
