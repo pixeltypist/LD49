@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdbb635261f53841b44a82d42463466, type: 3}
+  m_Name: AOE
+  m_EditorClassIdentifier: 
+  damage: 0
+  cooldown: 0
+  chargeTime: 2
+  range: 2
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  player: {fileID: 11400000, guid: 28f8be314ac1958448a32c11c21d0968, type: 2}
+  attackSprite: {fileID: -2277995287142679887, guid: 783e6aa09296c5548a5d454231cb60d9, type: 3}
+  spriteHolder: {fileID: 11400000, guid: 618bd53f773aeb34180bc13a579cbce2, type: 2}
+  AOE: {fileID: 4634625284023600035, guid: b692ae2261a6dda45a29259f200ff974, type: 3}

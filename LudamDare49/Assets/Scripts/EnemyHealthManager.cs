@@ -15,9 +15,11 @@ public class EnemyHealthManager : MonoBehaviour
     public void Attacked(float damage)
     {
         currentHealth -= damage;
-        if(currentHealth <= 0)
+        /*if(currentHealth <= 0)
         {
             GetComponent<EnemyController>().Die();
-        }
+        }*/
+
+        Destroy(this.gameObject);
     }
 }

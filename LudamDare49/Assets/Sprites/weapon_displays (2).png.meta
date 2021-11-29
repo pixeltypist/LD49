@@ -4,16 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8831274798592962953
-    second: weapon_displays (2)_0
+    second: heavy
   - first:
       213: 2596097851067745537
-    second: weapon_displays (2)_1
+    second: sword
   - first:
       213: 5845691147181136702
-    second: weapon_displays (2)_2
+    second: mis
   - first:
       213: -2277995287142679887
-    second: weapon_displays (2)_3
+    second: aoe
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: weapon_displays (2)_0
+      name: heavy
       rect:
         serializedVersion: 2
         x: 0
@@ -111,7 +111,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,7 +124,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_displays (2)_1
+      name: sword
       rect:
         serializedVersion: 2
         x: 45
@@ -132,7 +132,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,7 +145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_displays (2)_2
+      name: mis
       rect:
         serializedVersion: 2
         x: 90
@@ -153,7 +153,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,7 +166,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_displays (2)_3
+      name: aoe
       rect:
         serializedVersion: 2
         x: 135
@@ -174,7 +174,7 @@ TextureImporter:
         width: 45
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

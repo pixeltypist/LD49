@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9242c68090cbd4fb3a0943748c8700, type: 3}
   m_Name: MagicMissleSpeed
   m_EditorClassIdentifier: 
-  Value: 1
+  Value: 7
